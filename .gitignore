@@ -19,7 +19,6 @@ best_models/
 
 draft.ipynb
 nohup.out
-*.png
 debug.ipynb
 *.pt
 mount_drive.sh
