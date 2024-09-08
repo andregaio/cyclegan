@@ -31,6 +31,6 @@ python uda/train.py
 <img src="assets/debug_source.jpg">
 <img src="assets/debug_target.jpg">
 
-#### Training logs
+#### Logs
 <img src="assets/chart.png">
 </div>
