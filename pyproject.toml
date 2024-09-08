@@ -1,0 +1,10 @@
+[project]
+name = 'uda'
+version = '0.1.2'
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools]
+py-modules = ['uda']
