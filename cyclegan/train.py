@@ -157,7 +157,7 @@ def train(args):
             g_cycle = cycle_loss_s.item() + cycle_loss_t.item()
             d = loss_dis_s.item() + loss_dis_t.item()
             print(
-                f"""{epoch + 1}/{args.epochs}, Cycle: {total:.2f} Id: {g_id:.2f} GAN: {g_gan:.2f} G Cycle {g_cycle:.2f} D: {d:.2f}"""
+                f"""{epoch + 1}/{args.epochs}, Total: {total:.2f} Id: {g_id:.2f} Gan: {g_gan:.2f} Cycle {g_cycle:.2f} Disc: {d:.2f}"""
             )
 
             if args.wandb_log:
