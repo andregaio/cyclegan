@@ -1,15 +1,15 @@
 import argparse
 import itertools
+
+import cv2
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import torch.utils.data
-from torch.utils.data import DataLoader
-from uda.model import weights_init_normal
-from uda.data import UDADataset
-from uda.model import Discriminator, Generator, debug_sample
 import wandb
-import cv2
+from torch.utils.data import DataLoader
+
+from cyclegan.data import CycleGANDataset
+from cyclegan.model import Discriminator, Generator, debug_sample, weights_init_normal
 
 
 class LambdaLR:
@@ -37,12 +37,12 @@ def train(args):
 
     if args.wandb_log:
         wandb.init(
-            project="uda",
+            project="cyclegan",
         )
 
     device = torch.device("cuda")
 
-    train_set = UDADataset(f"{args.dataset_path}/train")
+    train_set = CycleGANDataset(f"{args.dataset_path}/train")
     train_loader = DataLoader(train_set, args.batch, shuffle=True, drop_last=True)
 
     gen_s_t = Generator()

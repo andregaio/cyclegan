@@ -1,5 +1,5 @@
 [project]
-name = 'uda'
+name = 'cyclegan'
 version = '0.1.2'
 dynamic = ["dependencies", "optional-dependencies"]
 
@@ -7,4 +7,4 @@ dynamic = ["dependencies", "optional-dependencies"]
 dependencies = { file = ["requirements.txt"] }
 
 [tool.setuptools]
-py-modules = ['uda']
+py-modules = ['cyclegan']

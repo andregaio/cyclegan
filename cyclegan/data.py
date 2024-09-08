@@ -2,12 +2,12 @@ import os
 import random
 
 import torch
-from torchvision import transforms
 from PIL import Image
 from torch.utils.data import Dataset
+from torchvision import transforms
 
 
-class UDADataset(Dataset):
+class CycleGANDataset(Dataset):
     def __init__(self, dataset_dir, max_iterations=1334):
 
         self.dataset_dir = dataset_dir

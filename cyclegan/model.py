@@ -1,11 +1,11 @@
+import functools
+
+import numpy as np
 import torch
 import torch.nn as nn
 from PIL import Image
-from torchvision.models import ResNet18_Weights
-import numpy as np
-from uda.data import debug_transforms
 
-import functools
+from cyclegan.data import debug_transforms
 
 
 class Generator(nn.Module):

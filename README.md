@@ -20,10 +20,10 @@ pip install -r requirements.txt
 
 ### Training
 ```
-python uda/train.py
+python cyclegan/train.py
 ```
 
-### [Results](https://wandb.ai/andregaio/uda)
+### Results
 <div align="center">
 
 #### Debug sample: Source -> Fake Target
