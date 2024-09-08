@@ -10,9 +10,9 @@ git clone https://github.com/andregaio/cyclegan.git
 cd cyclegan
 conda create -n cyclegan python=3.9
 conda activate cyclegan
-pip install -r requirements.txt
+pip install -e .
 ```
-### Models
+### Model
  - CycleGAN
 
 ### Dataset
